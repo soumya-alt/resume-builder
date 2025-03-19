@@ -1,5 +1,7 @@
 # Resume Builder Web Application
 
+This Website is live at https://soumya-alt.github.io/resume-builder/
+
 A frontend-only resume builder application that allows users to create professional resumes with multiple templates.
 
 ## Features
