@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Professional Resume Builder - Create Your CV Online | Free PDF Download</title>
+    <meta name="description" content="Create a professional resume in minutes with our free online resume builder. Choose from 10+ templates, customize your CV, and download as PDF. Perfect for job seekers.">
+    <meta name="keywords" content="resume builder, cv maker, professional resume, online resume, free resume builder, job application, career tools, resume templates, cv templates">
+    <meta name="author" content="Resume Builder">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://192.168.31.214/">
+    <meta property="og:title" content="Professional Resume Builder - Create Your CV Online">
+    <meta property="og:description" content="Create a professional resume in minutes with our free online resume builder. Choose from 10+ templates, customize your CV, and download as PDF.">
+    <meta property="og:image" content="path-to-your-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://192.168.31.214/">
+    <meta property="twitter:title" content="Professional Resume Builder - Create Your CV Online">
+    <meta property="twitter:description" content="Create a professional resume in minutes with our free online resume builder. Choose from 10+ templates, customize your CV, and download as PDF.">
+    <meta property="twitter:image" content="path-to-your-logo.png">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Professional Resume Builder",
+        "description": "Create a professional resume in minutes with our free online resume builder",
+        "applicationCategory": "Business",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "10+ Professional Templates",
+            "PDF Download",
+            "Real-time Preview",
+            "Mobile Responsive",
+            "Easy to Use Interface"
+        ]
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Builder</h1>
+            <p>Create your professional resume in minutes</p>
+        </header>
+
+        <main>
+            <div class="resume-builder">
+                <!-- Form Section -->
+                <section class="form-section">
+                    <div class="form-container">
+                        <h2>Personal Information</h2>
+                        <form id="resumeForm">
+                            <!-- Photo Upload -->
+                            <div class="form-group">
+                                <label for="photo">Profile Photo</label>
+                                <input type="file" id="photo" accept="image/*">
+                            </div>
+
+                            <!-- Basic Info -->
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+
+                            <!-- Career Objective -->
+                            <div class="form-group">
+                                <label for="objective">Career Objective</label>
+                                <textarea id="objective" rows="3"></textarea>
+                            </div>
+
+                            <!-- Key Skills -->
+                            <div class="form-group">
+                                <label>Key Skills</label>
+                                <div id="keySkillsContainer">
+                                    <div class="skill-item">
+                                        <input type="text" class="skill-input" placeholder="Add a skill">
+                                        <button type="button" class="remove-btn"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="addSkillBtn" class="add-btn">Add Skill</button>
+                            </div>
+
+                            <!-- Education -->
+                            <div class="form-group">
+                                <label>Education</label>
+                                <div id="educationContainer">
+                                    <div class="education-item">
+                                        <input type="text" placeholder="School/College/University" class="edu-school">
+                                        <input type="text" placeholder="Degree" class="edu-degree">
+                                        <input type="text" placeholder="Marks/Percentage" class="edu-marks">
+                                        <input type="text" placeholder="Year of Passing" class="edu-year">
+                                        <button type="button" class="remove-btn"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="addEducationBtn" class="add-btn">Add Education</button>
+                            </div>
+
+                            <!-- Technical Skills -->
+                            <div class="form-group">
+                                <label>Technical Skills</label>
+                                <div id="technicalSkillsContainer">
+                                    <div class="skill-item">
+                                        <input type="text" class="skill-input" placeholder="Add a technical skill">
+                                        <button type="button" class="remove-btn"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="addTechnicalSkillBtn" class="add-btn">Add Technical Skill</button>
+                            </div>
+
+                            <!-- Hobbies -->
+                            <div class="form-group">
+                                <label>Hobbies</label>
+                                <div id="hobbiesContainer">
+                                    <div class="skill-item">
+                                        <input type="text" class="skill-input" placeholder="Add a hobby">
+                                        <button type="button" class="remove-btn"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <button type="button" id="addHobbyBtn" class="add-btn">Add Hobby</button>
+                            </div>
+
+                            <!-- Personal Details -->
+                            <div class="form-group">
+                                <label>Personal Details</label>
+                                <textarea id="address" placeholder="Full Address" rows="2"></textarea>
+                                <input type="date" id="dob" placeholder="Date of Birth">
+                                <input type="text" id="nationality" placeholder="Nationality">
+                                <input type="text" id="languages" placeholder="Languages Known">
+                            </div>
+
+                            <!-- Declaration -->
+                            <div class="form-group">
+                                <label for="declaration">Declaration</label>
+                                <textarea id="declaration" rows="3"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="signature">Signature</label>
+                                <input type="text" id="signature">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Preview Section -->
+                <section class="preview-section">
+                    <div class="preview-controls">
+                        <h2>Preview</h2>
+                        <div class="template-selector">
+                            <label for="templateSelect">Template:</label>
+                            <select id="templateSelect">
+                                <option value="1">Template 1</option>
+                                <option value="2">Template 2</option>
+                                <option value="3">Template 3</option>
+                                <option value="4">Template 4</option>
+                                <option value="5">Template 5</option>
+                                <option value="6">Template 6</option>
+                                <option value="7">Template 7</option>
+                                <option value="8">Template 8</option>
+                                <option value="9">Template 9</option>
+                                <option value="10">Template 10</option>
+                            </select>
+                        </div>
+                        <button id="downloadBtn" class="download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                    </div>
+                    <div class="preview-container">
+                        <div id="resumePreview" class="resume-preview">
+                            <!-- Resume preview will be rendered here -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="templates.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
